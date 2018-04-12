@@ -5,22 +5,48 @@
  */
 package FinalProject;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 /**
  *
  * @author Steven DeAugustine
  */
+@Entity
+@Table(name = "USERS")
 public class User {
+    @Id
+    @Column(name = "userID")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
+    
+    @Column(name = "username")
     private String username;
+    
+    @Column(name = "password")
     private String password;
+    
+    @Column(name = "fullname")
     private String name;
     
+    @Column(name = "enabled")
+    private boolean enabled;
     
+    public User(){
+        
+    }
     
-    public User (long id, String username, String name){
+    public User (long id, String username, String password, String name, boolean enabled){
         this.id = id;
         this.username = username;
+        this.password = password;
         this.name = name;
+        this.enabled = enabled;
+        
     } 
 
     public long getId() {

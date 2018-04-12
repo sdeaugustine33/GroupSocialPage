@@ -19,16 +19,15 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class LoginCntl {
     
-    @Autowired
-    private Authenticate authenticate;
+    
 
     @Autowired
     private Notifications notifyService;
 
-    @RequestMapping("/")
+    @RequestMapping("/login")
     public String login(Login login) {
         return "login";
-    }
+    } 
 
     @RequestMapping(value = "/", method = RequestMethod.POST)
     public String loginPage(@Valid Login login, BindingResult bindingResult) {
@@ -37,11 +36,6 @@ public class LoginCntl {
              return "/login";
         }
 
-        if (!authenticate.authenticate(
-             login.getUsername(), login.getPassword())) {
-             notifyService.addErrorMessage("Invalid login!");
-             return "/login";
-        }
 
         notifyService.addInfoMessage("Login successful");
         return "redirect:/";
@@ -55,6 +49,16 @@ public class LoginCntl {
     @RequestMapping(value = "/register", method = RequestMethod.POST)
     public String registerPage(Register register){
         return "/register";
+    }
+    
+    @RequestMapping("/home")
+    public String homePage(){
+        return "home";
+    }
+    
+    @RequestMapping("/announcements")
+    public String announcements(){
+        return "announcements";
     }
     
 }

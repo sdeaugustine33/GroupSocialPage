@@ -13,11 +13,11 @@ import javax.validation.constraints.Size;
  * @author Steven DeAugustine
  */
 public class Login {
-    @Size(min=2,max=30, message = "Username size should be 2 -30")
+    @Size(min=2,max=25, message = "Username size should be 2-25")
     private String username;
     
     @NotNull
-    @Size(min=1,max=50)
+    @Size(min=1,max=25)
     private String password;
 
     public String getUsername() {

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="homelayout :: site-head">
+  <title>Announcements</title>
+</head>
+
+<body>
+
+<header th:replace="homelayout :: site-header" />
+<main>
+<h1>Announcements for TestGroup</h1>
+
+<table style="width:50%">
+  <caption>ANNOUNCEMENTS</caption>
+  <tr>
+    <th>Title</th>
+    <th>Body</th>
+    <th>Posted By</th>
+  </tr>
+  <tr>
+    <td>Post 1</td>
+    <td>This is a test</td>
+    <td>User1</td>
+  </tr>
+ <tr>
+    <td>Post 2</td>
+    <td>This is a test</td>
+    <td>User2</td>
+  </tr>
+  <tr>
+    <td>Post 3</td>
+    <td>This is a test</td>
+    <td>User3</td>
+  </tr>
+  <tr>
+    <td>Post 4</td>
+    <td>This is a test</td>
+    <td>User4</td>
+  </tr>
+</table>
+</main>
+
+<aside>
+    <h2>Recent Posts</h2>
+    <ol>
+        <li>Post 1</li>
+        <li>Post 2</li>
+    </ol>
+</aside>
+
+<footer th:replace="homelayout :: site-footer" />
+</body>
+</html>

@@ -69,3 +69,17 @@ ul#messages li.error {
 background: #d00;
 color: white;
 }
+
+body>aside {
+  float: right;
+  width: 200px;
+  background: #CCC;
+  padding: 15px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
