@@ -6,13 +6,11 @@
 <script src="../public/js/scripts.js" th:src="@{/js/scripts.js}"></script>
 <meta th:include="this :: head" th:remove="tag"/>
 </head><body><header th:fragment="site-header">
-<a href="login.html" th:href="@{/login}"><img src="../public/img/ball.png" th:src="@{/img/ball.png}" /></a>
-<a href="login.html" th:href="@{/login}">Login</a>
-<a href="register.html" th:href="@{/register}">Register</a>
+<a href="home.html" th:href="@{/login}"><img src="../public/img/ball.png" th:src="@{/img/ball.png}" /></a>
 <a href="home" th:ref="@{/home}">Home</a>
 <a href="announcements" th:ref="@{/announcements}">Announcements</a>
 <a href="files.hmtl" th:ref="@{/files}">Files</a>
-<div id="logged-in-info"> <span>Hello, <b>(user)</b></span>
+<div id="logged-in-info"> <span>Hello, <b>yo</b></span>
 <form method="post" th:action="@{/users/logout}">
 <input type="submit" value="Logout"/>
 </form>
