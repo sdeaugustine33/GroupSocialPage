@@ -9,6 +9,7 @@ Checkpoint3: Connect to database. Implement creating announcements
 Final: Group implementation and file upload implementation
 
 *Checkpoint 2 Update*
+
 Unable to get sqlite database connected, so login and registration is not functional with Spring Security.  
 Setup Spring Security to help with authentication and authorization.  Pages can be locked until authorized using Spring Security.  
 Created general views of how group homepages and group announcement pages will look.  
@@ -18,6 +19,7 @@ For next checkpoint
 Want to have database connected for next checkpoint.  After database is connected, want to have a fully functioning login and registration.  Once logged in, I want users to be able to create posts.  Will attempt to create groups using Spring Security Roles functionality.
 
 *Checkpoint 3 Update*
+
 Fully functioning registration and login implemented with spring security.  Create announcement functional, adds to databse.  Removing the file upload functionality from overall project, as there is not enough time.
 
 For final submission
