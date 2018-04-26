@@ -16,3 +16,9 @@ When database is connected will make these views pull information from database.
 
 For next checkpoint
 Want to have database connected for next checkpoint.  After database is connected, want to have a fully functioning login and registration.  Once logged in, I want users to be able to create posts.  Will attempt to create groups using Spring Security Roles functionality.
+
+*Checkpoint 3 Update*
+Fully functioning registration and login implemented with spring security.  Create announcement functional, adds to databse.  Removing the file upload functionality from overall project, as there is not enough time.
+
+For final submission
+Will need to get announcements view to pull from database.  Possibly have group functionality, if not will make it a general blog posting site. 
