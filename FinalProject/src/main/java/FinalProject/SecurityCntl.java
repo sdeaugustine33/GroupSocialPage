@@ -51,7 +51,6 @@ public class SecurityCntl extends WebSecurityConfigurerAdapter{
         http
             .authorizeRequests()
                 .antMatchers("/register","/css/**","/js/**","/img/**","/login").permitAll()
-                .antMatchers("/home").authenticated()
                 .anyRequest().authenticated()
                 .and()
             .formLogin()
